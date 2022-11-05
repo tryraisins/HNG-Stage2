@@ -29,18 +29,21 @@ const ContactForm = () => {
 
     return errors;
   };
-  
+  const submitForm = (values) => {
+    alert("Submitted");
+  };
 
   return (
     <Formik
       initialValues={initialValues}
       validate={validate}
-      
+      onSubmit={submitForm}
     >
       {(formik) => {
         const {
           values,
           handleChange,
+          handleSubmit,
           errors,
           touched,
           handleBlur,
@@ -49,11 +52,7 @@ const ContactForm = () => {
         } = formik;
         return (
           <section>
-             <form
-              className="row g-4"
-              action="https://formsubmit.co/tryraisins@gmail.com"
-              method="POST"
-            >
+            <form className="row g-4" onSubmit={handleSubmit}>
               <div className="col-12 col-md-6">
                 <label htmlFor="first_name" className="form-label">
                   First name
@@ -66,7 +65,6 @@ const ContactForm = () => {
                       : null
                   }`}
                   id="first_name"
-                  name="First Name"
                   placeholder="Enter your first name"
                   value={values.first_name}
                   onChange={handleChange}
@@ -86,7 +84,6 @@ const ContactForm = () => {
                     errors.last_name && touched.last_name ? "input-error" : null
                   }`}
                   id="last_name"
-                  name="Last Name"
                   placeholder="Enter your last name"
                   value={values.last_name}
                   onChange={handleChange}
@@ -106,7 +103,6 @@ const ContactForm = () => {
                     errors.email && touched.email ? "input-error" : null
                   }`}
                   id="email"
-                  name="Email"
                   placeholder="yourname@email.com"
                   value={values.email}
                   onChange={handleChange}
@@ -133,7 +129,6 @@ const ContactForm = () => {
                   value={values.message}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  name="Message"
                 ></textarea>
                 {errors.message && touched.message && (
                   <span className="error">{errors.message}</span>
@@ -172,7 +167,6 @@ const ContactForm = () => {
                 </button>
               </div>
             </form>
-        
           </section>
         );
       }}
