@@ -29,21 +29,18 @@ const ContactForm = () => {
 
     return errors;
   };
-  const submitForm = (values) => {
-    alert("Submitted");
-  };
+  
 
   return (
     <Formik
       initialValues={initialValues}
       validate={validate}
-      onSubmit={submitForm}
+      
     >
       {(formik) => {
         const {
           values,
           handleChange,
-          handleSubmit,
           errors,
           touched,
           handleBlur,
@@ -52,7 +49,7 @@ const ContactForm = () => {
         } = formik;
         return (
           <section>
-            <form className="row g-4" onSubmit={handleSubmit}>
+            <form className="row g-4" action="https://formsubmit.co/tryraisins@gmail.com" method="POST">
               <div className="col-12 col-md-6">
                 <label htmlFor="first_name" className="form-label">
                   First name
