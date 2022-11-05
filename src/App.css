@@ -302,6 +302,8 @@
 
 .input-error {
   border-color: #e63946 !important;
+}
+.input-error:focus {
   box-shadow: 0 0 0 0.25rem rgb(230 57 70 / 25%) !important;
 }
 
