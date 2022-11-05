@@ -1,0 +1,317 @@
+#btn__submit {
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Base/White */
+
+  color: #ffffff;
+}
+.App {
+  text-align: center;
+}
+.camera {
+  display: none;
+}
+.contact {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 64px;
+  margin-top: 64px;
+}
+.contact-intro {
+  margin-bottom: 48px;
+}
+.contact-intro-title {
+  /* Display md/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: -0.02em;
+
+  /* Gray/900 */
+
+  color: #101828;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.contact-intro-subtitle {
+  /* Text lg/Normal */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  /* Gray/600 */
+
+  color: #475467;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.form-check-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* Gray/600 */
+
+  color: #475467;
+}
+.form-control {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Gray/500 */
+
+  color: #667085;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+.form-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Gray/700 */
+
+  color: #344054;
+  margin-bottom: 6px !important;
+}
+.form-text {
+  /* Text sm/Normal */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Gray/600 */
+
+  color: #475467;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.link-button {
+  background: #eaecf0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 24px 4px;
+  cursor: pointer !important;
+  margin-bottom: 24px;
+}
+.links {
+  margin-bottom: 25px;
+}
+#slack,
+#profile-name {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  display: inline-block;
+  /* Text lg/Bold */
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  /* Gray/900 */
+
+  color: #101828;
+}
+
+.profile {
+  margin-top: 64px;
+}
+
+.zuri-footer {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 37.24px;
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: #eaecf0;
+}
+
+.zuri-logo {
+  margin-bottom: 16px;
+}
+.zuri-logo-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  a :hover {
+    background-color: #d0d5dd;
+  }
+  .contact {
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 188px;
+    margin-top: 140px;
+  }
+
+  .contact-intro {
+    margin-bottom: 48px;
+  }
+  .contact-intro-title {
+    margin-bottom: 20px;
+    /* Display md/Semibold */
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: -0.02em;
+
+    /* Gray/900 */
+
+    color: #101828;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .contact-intro-subtitle {
+    /* Text xl/Normal */
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    /* Gray/600 */
+
+    color: #475467;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .links {
+    padding-left: 144px;
+    padding-right: 144px;
+  }
+  #slack,
+  #profile-name {
+    margin-bottom: 56px;
+  }
+  .spacer {
+    margin-bottom: 48px;
+  }
+
+  .twitter :hover {
+    background-color: #d0d5dd;
+  }
+  .profile {
+    margin-top: 64px;
+  }
+  #profile__img:hover {
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #profile__img:hover + .camera {
+    display: block;
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .zuri-footer {
+    margin-top: 89px;
+    padding-left: 114px;
+    padding-right: 114px;
+  }
+
+  .zuri-logo-title {
+    padding-left: 33px !important;
+    text-align: center;
+  }
+}
+
+.input-error {
+  border-color: #e63946 !important;
+  box-shadow: 0 0 0 0.25rem rgb(230 57 70 / 25%) !important;
+}
+
+.error {
+  color: #e63946;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.disabled-btn {
+  cursor: not-allowed;
+  background: rgba(#1d3557, 0.8);
+}
